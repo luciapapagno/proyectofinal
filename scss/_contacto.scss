@@ -1,0 +1,86 @@
+.bannerContacto
+{position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    h3 {position:absolute;
+       top: 55%;
+       padding: .5em;
+       font-weight: bold;
+    font-size: 1em;}
+ 
+ 
+ .linkBanner
+ {position: absolute;
+    top: 40%;
+    background-color:#efe7e5 ;
+    opacity: 0.9;
+    padding:10px;
+    font-size: 1.5em;
+    border-radius: 3px;
+    font-weight: bold;
+ :hover {padding: 15px;
+ font-size: 1.3em;
+ color: $color-fuente;}
+ }}
+
+.contenedorContacto
+{display: flex;
+background:linear-gradient(#efe7e5,white) ;
+margin-top: 10px;
+width: 95%;
+align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+text-align: center;}
+
+
+.contactoUno{width: 50%;
+  padding-left: 3rem;
+  .contiene-video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    
+    iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    }
+    }
+
+}
+
+
+.contactoDos
+{width: 50%;
+padding: 2rem;
+font-size: 1.4em;
+margin-left: auto;
+margin-right: auto;}
+
+.formUno
+{color: #905c44;
+font-size: 1.2em;
+padding-bottom: 2rem;}
+
+
+.miBoton
+{background:linear-gradient(#efe7e5,white);
+border: rgb(216, 215, 215) 1px solid;
+color: rgb(121, 120, 120);
+}
+
+h4
+{font-size: 1em;
+color: #905c44;}

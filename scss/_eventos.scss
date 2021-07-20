@@ -1,0 +1,81 @@
+.bannerEventos
+{position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 95%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   h3 {position:absolute;
+      top: 55%;
+      padding: .5em;
+      font-weight: bold;
+   font-size: 1em;}
+
+
+.linkBanner
+{position: absolute;
+   top: 40%;
+   background-color:#efe7e5 ;
+   opacity: 0.9;
+   padding:10px;
+   font-size: 1.5em;
+   border-radius: 3px;
+   font-weight: bold;
+:hover {padding: 15px;
+font-size: 1.3em;
+color: $color-fuente;}
+}}
+ 
+.contenedorEventos
+{background:$bg-gradiente ;
+   width: 95%;
+   margin: 0 auto;
+   margin-top: 10px;}
+ 
+
+
+.newsletter
+{display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 1rem;
+color: $color-fuente;
+font-style: italic;
+
+.boton {background-color: $bg-color;
+border: solid 1px rgb(223, 222, 222);
+border-radius: 3px;
+color: rgb(83, 83, 83);
+margin-top: .8em;}}
+
+
+.eventos 
+{display: flex;
+padding-top: 8rem;
+padding-bottom: 6rem;
+align-items: center;
+justify-content: space-around;
+
+.fecha {font-size: 1em;
+font-weight: bold;
+color: $color-fuente;
+padding-top: .8em;
+padding-bottom: .6em;
+padding-left: 1.5em;}
+
+
+.eventoUno, .eventoDos, .eventoTres {
+border: solid 1px rgb(223, 222, 222);
+border-radius: 3px;
+width: 19%;
+transition: all 2s ease;
+.prueba
+{display:flex;
+flex-wrap: nowrap;
+font-size: .8em;
+justify-content: space-evenly;}}
+
+}

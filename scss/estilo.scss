@@ -1,0 +1,282 @@
+@import "colores";
+@import "header";
+@import "eventos";
+@import "nosotros";
+@import "contacto";
+@import "sumate";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+
+@mixin cajas ($grid)
+{grid-area: $grid;
+  background:$bg-gradiente ;
+  padding: 2.5rem;}
+
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+    
+body{background-color:#ffffff;
+font-family: 'Poppins', sans-serif;}
+  
+    
+    .contenedor{
+        width: 95%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+            "banner banner"
+            "texto video"
+            "footer footer";}
+    
+    
+    .bannerIndex{
+    grid-area:banner;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+    justify-content: center;
+
+
+    .linkCarousel
+    {
+    background-color:$bg-color ;
+    padding: .4em;
+    border-radius: 3px;
+margin-bottom: 1em;
+width: 10em;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: auto;
+margin-right: auto;
+p{font-size: 10rem;}
+}
+h2 {padding-top: 0;}
+
+}
+    
+    a
+    {text-decoration: none;
+    color: $color-fuente;}
+    
+   
+    .texto
+    {@include cajas (texto);
+    .titulo
+    { font-size: 2.3em;
+    color: $color-fuente;}
+    .subtitulo{font-size: 1.5em;}    
+   .parrafo
+    {padding-top: .3rem;
+    line-height:2.3em ;
+    font-size: .9em;}}
+    
+    
+    .video
+    {@include cajas (video);
+    .contiene-video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    
+    iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    }
+    }}
+    
+    .footer
+    {grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+     .redes{padding-right: 1em;}}
+
+     ul li
+     {display: inline-block;
+      padding: 5px;
+     font-weight: 500;}
+
+
+
+@media only screen and (max-width: 420px) {
+   
+    .bannerIndex
+    { h2 {
+      font-size: 1.5em;
+      margin-bottom: .2em;
+    line-height: 1.2em; }
+    p {font-size: .8em;
+    margin: .2em;}
+    .linkCarousel {
+      font-size: .9em; }}
+    li.nav-item {
+      font-size: .9em; }
+    .texto {
+      padding-top: 2rem;
+      padding-right: 2rem;
+      padding-left: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: justify; 
+      .parrafo {
+        padding-top: .5rem;
+        line-height: 1.7em;
+        font-size: .8em;
+        margin-bottom: 0; }
+        .titulo {
+          font-size: 1.4em;
+          margin-bottom: .1em;
+          font-weight: bold; }
+    .subtitulo {
+      font-size: .9em;
+      margin-bottom: .1em;
+      padding-top: .5em;
+      font-weight: 600; }}
+    ul {
+      padding-left: 1rem; }
+    .video {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 0;
+      background: linear-gradient(white, #efe7e5, white); }
+    .footer {
+      padding-left: .5em;
+      padding-right: .9em; }
+      .footer ul li {
+        font-size: .8em; }
+      
+    .contenedor {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas: "banner banner"
+   "texto texto"
+   "video video"        
+   "footer footer"; }
+    div .carousel-inner img {
+      height: 300px;
+      max-width: 100%;
+      object-fit: cover; } 
+    
+      .bannerEventos {img {height: 300px;
+        max-width: 100%;
+    object-fit: cover;}
+    h3 {font-size: .9em;
+    display: flex;
+    text-align: center;
+    padding-top: 1.5rem;
+    line-height: 1.7em;}
+    } 
+        
+
+.eventos {display: flex;
+flex-direction: column;
+padding:0;
+
+.eventoUno, .eventoDos, .eventoTres
+{width: 40vh;
+margin-top: 3em;
+margin-bottom: 3rem;}}
+
+.newsletter h4 {font-size: .9em;
+display: flex;
+text-align: center}
+    
+.bannerNosotros {img {height: 300px;
+    max-width: 100%;
+object-fit: cover;}
+h3 {font-size: .9em;
+display: flex;
+text-align: center;
+padding-top: 1.5rem;
+line-height: 1.7em;
+padding-left: 1em;
+padding-right: 2em;}
+} 
+
+.nosotros {
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: justify;
+.textoNosotros {font-size: .8em;
+margin-left: auto;
+margin-right: auto;
+padding-top: 2rem;
+padding: 1.5em;
+
+h4 {line-height: 2rem;
+padding-top: 2rem;}}
+
+
+
+.listaNosotros {display: flex;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+font-size: .8em;
+padding: 1em;
+
+ul {padding: 0;}
+h2 {margin-left: auto;
+margin-right: auto;
+padding: 0;}}
+
+.galeria {padding-top: 2rem;
+padding-bottom: 2rem;
+}}
+
+.bannerContacto {img {height: 300px;
+    max-width: 100%;
+object-fit: cover;}
+h3 {font-size: .9em;
+display: flex;
+text-align: center;
+padding-top: 1.5rem;
+line-height: 1.7em;}
+} 
+.contenedorContacto {display: flex;
+flex-direction: column;
+
+.contactoUno {width: 99%;
+padding-right: 3rem;
+padding-top: 4rem;
+padding-bottom: 2rem;}
+
+.contactoDos {width: 90%;}}
+
+.bannerSumate {img {height: 300px;
+  max-width: 100%;
+object-fit: cover;}
+h3 {font-size: .9em;
+display: flex;
+text-align: center;
+padding-top: 1.5rem;
+line-height: 1.7em;}
+} 
+
+.sumate {display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+.sumateUno {width: 90%;}
+
+.sumateDos {width: 90%;
+padding-top: 3rem;}}
+
+
+}
